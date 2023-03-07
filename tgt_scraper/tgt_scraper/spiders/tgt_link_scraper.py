@@ -1,7 +1,7 @@
 import scrapy
 
-class TgtScraperSpider(scrapy.Spider):
-    name = "tgt_scraper"
+class TgtLinkScraperSpider(scrapy.Spider):
+    name = "tgt_link_scraper"
     allowed_domains = ["thegroundtruthproject.org"]
     start_urls = ["https://thegroundtruthproject.org/category/reports/page/" + str(i) for i in range(1, 85)]
 
